@@ -15,7 +15,7 @@
 
     <!-- Validation Errors -->
     <x-auth-validation-errors class="mb-4" :errors="$errors" />
-    <section class="h-full w-full border-box transition-all duration-500 linear" style="background-color: #232130">
+    <section class="h-full w-full border-box transition-all duration-500 linear" style="background-color: #ffffff">
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -122,7 +122,7 @@
             <div class="flex flex-col items-center h-full lg:flex-row">
                 <div class="relative hidden lg:block h-full width-left">
                     <img class="absolute object-fill centered"
-                        src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-11.png"
+                        src="{{ asset('image/logologin.png') }}"
                         alt="" />
                 </div>
                 <div
