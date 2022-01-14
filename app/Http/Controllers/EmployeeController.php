@@ -96,6 +96,7 @@ class EmployeeController extends Controller
     {
         $employee->delete();
 
-        return redirect()->route('employee.index');
+        return redirect()->route('employee.index')
+            ->with('success', 'Data Karyawan Berhasil Dihapus');
     }
 }
