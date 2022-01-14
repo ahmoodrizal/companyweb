@@ -168,7 +168,7 @@
                 class="w-full grid grid-cols-1 lg:grid-cols-3 py-8 lg:px-24 md:px-16 sm:px-8 px-8">
                 <div class="flex items-center justify-between">
                     <a href="#">
-                        <img src="{{ asset('image/sofTech.png') }}" alt="" />
+                        <img src="{{ asset('image/logo.png') }}" class ="object-contain h-20 w-96" alt="" />
                     </a>
                     <div class="flex justify-end items-center lg:hidden cursor-pointer">
                         <svg class="w-6 h-6" @click="open = !open" fill="none" stroke="#FFFFFF"
@@ -192,9 +192,9 @@
                     </a>
                     <a href="#"
                         class="nav-text text-sm text-white font-medium mx-0 lg:mx-5 my-4 lg:my-0 relative active">Home</a>
-                    <a href="#" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Benefits</a>
-                    <a href="#" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Pricing</a>
-                    <a href="#" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Contact</a>
+                    <a href="#benefits" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Benefits</a>
+                    <a href="#pricing" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Pricing</a>
+                    <a href="#contact" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Contact</a>
 
                     <div class="flex items-center justify-end w-full lg:hidden mt-3">
                         <a href="{{ route('login') }}"
@@ -220,7 +220,7 @@
             </div>
 
             <!-- Hero -->
-            <div>
+            <div id="home">
                 <div class="mx-auto flex pt-16 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
                     <!-- Left Column -->
                     <div
@@ -231,9 +231,9 @@
                             Contacts Us Now !
                         </h1>
                         <p class="caption-text text-base font-light leading-6 tracking-wide mb-12 lg:mb-20">
-                            Since 2019. We transform bussiness with adaptable <b>Digital Solutions</b> <br
-                                class="sm:block hidden" />
-                            that satisfy the needs for tomorrow and future.
+                            Sejak 2019. Kami mengubah bisnis agar mudah beradaptasi <br class="sm:block hidden" /> dengan <b>Digital Solutions</b> untuk memenuhi kebutuhan dimasa depan
+        
+                            
                         </p>
                         <div
                             class="md:flex contents items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 space-x-0">
@@ -241,19 +241,7 @@
                                 class="btn-fill inline-flex font-semibold text-white text-base py-4 px-8 rounded-full mb-4 lg:mb-0 md:mb-0 focus:outline-none">
                                 Find More
                             </button>
-                            <button
-                                class="btn-outline font-normal text-base py-4 px-6 rounded-full focus:outline-none bg-transparent">
-                                <div class="flex items-center">
-                                    <svg class="mr-2.5" width="27" height="27" viewBox="0 0 27 27" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M16.1793 13.7935L11.9166 10.9515V16.6355L16.1793 13.7935ZM18.1673 14.0708L11.1013 18.7815C11.0511 18.8149 10.9928 18.834 10.9326 18.8369C10.8723 18.8398 10.8125 18.8263 10.7593 18.7978C10.7062 18.7694 10.6617 18.727 10.6307 18.6753C10.5997 18.6236 10.5833 18.5644 10.5833 18.5041V9.0828C10.5833 9.0225 10.5997 8.96334 10.6307 8.91162C10.6617 8.8599 10.7062 8.81756 10.7593 8.7891C10.8125 8.76064 10.8723 8.74713 10.9326 8.75001C10.9928 8.7529 11.0511 8.77206 11.1013 8.80546L18.1673 13.5161C18.213 13.5466 18.2504 13.5878 18.2763 13.6362C18.3022 13.6846 18.3157 13.7386 18.3157 13.7935C18.3157 13.8483 18.3022 13.9024 18.2763 13.9507C18.2504 13.9991 18.213 14.0404 18.1673 14.0708Z"
-                                            fill="#5D6E86" />
-                                        <rect x="0.75" y="1.29346" width="25" height="25" rx="12.5" stroke="#5D6E86" />
-                                    </svg>
-                                    Watch the video
-                                </div>
-                            </button>
+                            
                         </div>
                     </div>
                     <!-- Right Column -->
@@ -261,15 +249,15 @@
                         <img class="lg:absolute lg:block hidden bottom-0 right-0"
                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-1.png"
                             alt="" />
-                        <img class="absolute bottom-0 lg:block hidden lg:right-24 md:right-16 sm:right-8 right-8"
-                            src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-2.png"
+                        <img class="absolute top-10 lg:block hidden lg:right-25 md:right-15 sm:right-8 right-8"
+                            src="{{ asset('image/hero.png') }}"
                             alt="" />
 
                     </div>
                 </div>
             </div>
     </section>
-    <section class="h-full w-full px-8 py-20 bg-white">
+    <section id="benefits" class="h-full w-full px-8 py-20 bg-white">
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -296,7 +284,7 @@
             }
 
         </style>
-        <div class="content-3-1 flex lg:flex-row flex-col items-center" style="font-family: 'Poppins', sans-serif">
+        <div id="benefits" class="content-3-1 flex lg:flex-row flex-col items-center" style="font-family: 'Poppins', sans-serif">
             <!-- Left Column -->
             <div class="w-full lg:w-1/2 text-center justify-center flex lg:mb-0 mb-12">
                 <img id="hero" src="{{ asset('image/undraw_personal_finance_tqcd.png') }}" alt="" />
@@ -363,7 +351,7 @@
             </div>
         </div>
     </section>
-    <section class="h-full pt-20 pb-12 lg:px-24 md:px-16 sm:px-8 px-4 transition-all duration-500 linear"
+    <section id="contact" class="h-full pt-20 pb-12 lg:px-24 md:px-16 sm:px-8 px-4 transition-all duration-500 linear"
         style="background-color: #232347">
 
         <style>
