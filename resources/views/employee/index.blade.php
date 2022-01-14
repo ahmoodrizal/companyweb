@@ -19,7 +19,7 @@
                         <a href="{{ route('employee.create') }}">
                             <x-button>{{ 'Add Employee Data' }}</x-button>
                         </a>
-                        {{-- <div class="inline-block">
+                        <div class="inline-block">
                             <form action="#" target="_blank" formtarget="_blank" method="GET">
                                 <div class="inline-block">
                                     <x-button class="ml-3 bg-indigo-500 hover:bg-indigo-400">
@@ -28,7 +28,7 @@
                                     </x-button>
                                 </div>
                             </form>
-                        </div> --}}
+                        </div>
                     </div>
                     <table class="w-full table-auto">
                         <thead>
