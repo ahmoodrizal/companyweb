@@ -14,12 +14,12 @@ Memiliki Fitur Berikut
 
 - [x] Autentikasi with Laravel Breeze
 - [x] SweetAlert 2.0
-- [] CRUD Employee and Departments
+- [ ] CRUD Employee and Departments
 - [x] Font Awesome
 - [x] Blade Templating Engine
 - [x] Tailwind CSS 2.0
-- [] Paginate
-- [] Print Data to PDF
+- [ ] Paginate
+- [ ] Print Data to PDF
 - [x] Responsive Landing Page
 
 ## Author
