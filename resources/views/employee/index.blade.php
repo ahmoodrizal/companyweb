@@ -9,12 +9,6 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    @if ($message = Session::get('success'))
-                        <div class="px-4 py-3 leading-normal font-semibold text-green-700 bg-green-100 rounded-lg mb-5"
-                            role="alert">
-                            <p>{{ $message }}</p>
-                        </div>
-                    @endif
                     <div class="mb-4">
                         <a href="{{ route('employee.create') }}">
                             <x-button>{{ 'Add Employee Data' }}</x-button>
