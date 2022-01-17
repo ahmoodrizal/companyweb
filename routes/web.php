@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\DepartmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,5 +24,5 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::resource('employee', EmployeeController::class)->middleware(['auth']);
-
+Route::resource('depart', DepartmentController::class)->middleware(['auth']);
 require __DIR__ . '/auth.php';
