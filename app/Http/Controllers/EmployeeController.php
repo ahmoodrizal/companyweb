@@ -42,7 +42,7 @@ class EmployeeController extends Controller
             'emp_email' => ['required'],
             'emp_address' => ['required'],
             'emp_department' => ['required'],
-            'salary' => ['required'],
+            'salary' => ['required', 'integer'],
             'gender' => ['required'],
         ]);
 
@@ -71,7 +71,7 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
-        //
+        return view('employee.edit', compact('employee'));
     }
 
     /**
@@ -83,7 +83,20 @@ class EmployeeController extends Controller
      */
     public function update(Request $request, Employee $employee)
     {
-        //
+        $validate_data = $request->validate([
+            'emp_id' => ['required'],
+            'emp_fullname' => ['required'],
+            'emp_email' => ['required'],
+            'emp_address' => ['required'],
+            'emp_department' => ['required'],
+            'salary' => ['required', 'integer'],
+            'gender' => ['required'],
+        ]);
+
+        $employee->update($validate_data);
+
+        return redirect()->route('employee.index')
+            ->with('success', 'Data Karyawan Berhasil Diperbarui');
     }
 
     /**

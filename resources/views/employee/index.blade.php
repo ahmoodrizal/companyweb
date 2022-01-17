@@ -62,7 +62,7 @@
                                                 </a>
                                             </div>
                                             <div class="py-2 inline-flex">
-                                                <a href="#">
+                                                <a href="{{ route('employee.edit', $employee->id) }}">
                                                     <x-button
                                                         class=" rounded-md px-2 py-2 mr-2 md:px-3 font-bold hover:bg-yellow-600">
                                                         <i class="fa fa-edit"></i>
