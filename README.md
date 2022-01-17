@@ -9,16 +9,23 @@
 
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi Laravel Perancangan Sistem Company Profile
+Memiliki Fitur Berikut
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Autentikasi with Laravel Breeze
+- SweetAlert 2.0
+- CRUD Employee and Departments
+- Font Awesome
+- Blade Templating Engine
+- Tailwind CSS 2.0
+- Paginate
+- Print Data to PDF
+- Responsive Landing Page
 
+## Author
+-  Ahmad Rizal Imaduddin (2113191071)
+-  Alam Nuzaman (2113191108)
+-  Muhammad Ath-Thariq (2113191132)
 
 ## License
 
