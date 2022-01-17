@@ -249,8 +249,8 @@
                         <img class="lg:absolute lg:block hidden bottom-0 right-0"
                             src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header3/Header-3-1.png"
                             alt="" />
-                        <img class="absolute top-10 lg:block hidden lg:right-25 md:right-15 sm:right-8 right-8"
-                            src="{{ asset('image/hero.png') }}"
+                        <img class="absolute top-20 lg:block hidden lg:right-25 md:right-15 sm:right-8 right-8"
+                            src="{{ asset('image/gambar.png') }}"
                             alt="" />
 
                     </div>
