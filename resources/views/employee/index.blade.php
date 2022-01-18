@@ -14,12 +14,13 @@
                             <x-button>{{ 'Add Employee Data' }}</x-button>
                         </a>
                         <div class="inline-block">
-                            <form action="#" target="_blank" formtarget="_blank" method="GET">
                                 <div class="inline-block">
+                                <a href="{{ route('employee.cetakpdf') }}">
                                     <x-button class="ml-3 bg-indigo-500 hover:bg-indigo-400">
                                         <i class="fa fa-print mr-2"></i>
                                         {{ 'Print to PDF' }}
                                     </x-button>
+                                    </a>
                                 </div>
                             </form>
                         </div>

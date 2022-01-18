@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\department;
 use Illuminate\Http\Request;
+use PDF;
 
 class DepartmentController extends Controller
 {
@@ -110,5 +111,12 @@ class DepartmentController extends Controller
 
         return redirect()->route('depart.index')
         ->with('success', 'Data Department Berhasil Dihapus');
+    }
+
+    public function cetakdept(){
+        $depart = department::all();
+        $pdf = PDF::loadview('depart.cetakdept',['depart'=> $depart]);
+        return $pdf->download('LAPORAN_DEPARTMENT.pdf');
+
     }
 }

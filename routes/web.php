@@ -23,6 +23,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
 Route::resource('employee', EmployeeController::class)->middleware(['auth']);
 Route::resource('depart', DepartmentController::class)->middleware(['auth']);
+Route::get('/cetakpdf', [EmployeeController::class, 'cetakpdf'])->middleware(['auth'])->name('employee.cetakpdf');
+Route::get('/cetakdept', [DepartmentController::class, 'cetakdept'])->middleware(['auth'])->name('depart.cetakdept');
 require __DIR__ . '/auth.php';

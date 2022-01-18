@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Employee;
 use Illuminate\Http\Request;
+use PDF;
 
 class EmployeeController extends Controller
 {
@@ -17,6 +18,7 @@ class EmployeeController extends Controller
         $employees = Employee::all();
         return view('employee.index', compact('employees'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -111,5 +113,11 @@ class EmployeeController extends Controller
 
         return redirect()->route('employee.index')
             ->with('success', 'Data Karyawan Berhasil Dihapus');
+    }
+    public function cetakpdf(){
+        $employees = employee::all();
+        $pdf = PDF::loadview('employee.cetakpdf',['employees'=> $employees]);
+        return $pdf->download('LAPORAN_EMPLOYEES.pdf');
+
     }
 }
