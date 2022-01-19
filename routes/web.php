@@ -23,9 +23,15 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::middleware('auth')->group(function () {
+    Route::resource('employee', EmployeeController::class);
+    Route::get('qrcode/{id}', [EmployeeController::class, 'generate'])->name('employee.generate');
+    Route::get('/cetakpdf', [EmployeeController::class, 'cetakpdf'])->name('employee.cetakpdf');
 
-Route::resource('employee', EmployeeController::class)->middleware(['auth']);
-Route::resource('depart', DepartmentController::class)->middleware(['auth']);
-Route::get('/cetakpdf', [EmployeeController::class, 'cetakpdf'])->middleware(['auth'])->name('employee.cetakpdf');
-Route::get('/cetakdept', [DepartmentController::class, 'cetakdept'])->middleware(['auth'])->name('depart.cetakdept');
+    Route::resource('depart', DepartmentController::class);
+    Route::get('/cetakdept', [DepartmentController::class, 'cetakdept'])->name('depart.cetakdept');
+});
+
+
+
 require __DIR__ . '/auth.php';

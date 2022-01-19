@@ -32,6 +32,7 @@
                                 <th class="px-4 py-2 border">No.</th>
                                 <th class="px-4 py-2 border">Full Name</th>
                                 <th class="px-4 py-2 border">Department</th>
+                                <th class="px-4 py-2 border">QR-Code</th>
                                 <th class="px-4 py-2 border">Action</th>
                             </tr>
                         </thead>
@@ -48,7 +49,14 @@
                                         <td class=" px-4 py-2 w-4/12 border font-semibold">
                                             {{ $employee->emp_fullname }}
                                         </td>
-                                        <td class=" px-4 py-2 border font-semibold">{{ $employee->emp_department }}
+                                        <td class="px-4 py-2 border font-semibold">{{ $employee->emp_department }}
+                                        </td>
+                                        <td class="px-4 py-2 border font-medium text-center">
+                                            <a href="{{ route('employee.generate', $employee->id) }}">
+                                                <x-button>
+                                                    Generate
+                                                </x-button>
+                                            </a>
                                         </td>
                                         <td class="px-4 py-2 border w-2/12 text-left md:text-center">
                                             <div class="py-2 inline-flex">

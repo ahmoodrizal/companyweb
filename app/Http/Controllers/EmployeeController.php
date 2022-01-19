@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 use PDF;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class EmployeeController extends Controller
 {
@@ -114,6 +115,7 @@ class EmployeeController extends Controller
         return redirect()->route('employee.index')
             ->with('success', 'Data Karyawan Berhasil Dihapus');
     }
+
     public function cetakpdf()
     {
         $employees = employee::all();
@@ -121,5 +123,14 @@ class EmployeeController extends Controller
         $pdf = PDF::loadview('employee.cetakpdf', ['employees' => $employees]);
 
         return $pdf->download('LAPORAN_EMPLOYEES.pdf');
+    }
+
+    public function generate($id)
+    {
+        $employee = Employee::findOrFail($id);
+
+        $qrcode = QrCode::size(200)->email($employee->emp_email);
+
+        return view('employee.qrcode', compact('qrcode'));
     }
 }
