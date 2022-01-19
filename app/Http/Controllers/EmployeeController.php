@@ -118,8 +118,8 @@ class EmployeeController extends Controller
     {
         $employees = employee::all();
 
-        $pdf = PDF::loadview('employee.cetakpdf', ['employees' => $employees])->setPaper('a4', 'landscape');
+        $pdf = PDF::loadview('employee.cetakpdf', ['employees' => $employees]);
 
-        return $pdf->stream('LAPORAN_EMPLOYEES.pdf');
+        return $pdf->download('LAPORAN_EMPLOYEES.pdf');
     }
 }
