@@ -14,16 +14,17 @@
                             <x-button>{{ 'Add Employee Data' }}</x-button>
                         </a>
                         <div class="inline-block">
-                                <div class="inline-block">
+                            <div class="inline-block">
                                 <a href="{{ route('employee.cetakpdf') }}">
                                     <x-button class="ml-3 bg-indigo-500 hover:bg-indigo-400">
                                         <i class="fa fa-print mr-2"></i>
                                         {{ 'Print to PDF' }}
                                     </x-button>
-                                    </a>
-                                </div>
+                                </a>
+                            </div>
                             </form>
                         </div>
+
                     </div>
                     <table class="w-full table-auto">
                         <thead>
@@ -41,7 +42,9 @@
                             @if (!empty($employees))
                                 @foreach ($employees as $employee)
                                     <tr class="">
-                                        <td class="px-4 py-2 border text-center">{{ $i++ }}</td>
+                                        <td class="px-4 py-2 border text-center">
+                                            {{ ($employees->currentPage() - 1) * $employees->links()->paginator->perPage() + $loop->iteration }}
+                                        </td>
                                         <td class=" px-4 py-2 w-4/12 border font-semibold">
                                             {{ $employee->emp_fullname }}
                                         </td>
@@ -86,6 +89,9 @@
                                 </tr>
                             @endif
                         </tbody>
+                        <div class="inline-blocks mb-4">
+                            {{ $employees->onEachSide(0)->links() }}
+                        </div>
                     </table>
                 </div>
             </div>
