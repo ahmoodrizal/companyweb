@@ -18,7 +18,7 @@ Memiliki Fitur Berikut
 - [x] Font Awesome
 - [x] Blade Templating Engine
 - [x] Tailwind CSS 2.0
-- [ ] Pagination
+- [x] Pagination
 - [x] Print Data to PDF
 - [x] Responsive Landing Page
 
