@@ -20,7 +20,7 @@ Memiliki Fitur Berikut
 - [x] Tailwind CSS 2.0
 - [x] Pagination
 - [x] Print Data to PDF
-- [ ] Generate QR-Code
+- [x] Generate QR-Code
 - [x] Responsive Landing Page
 
 ## Author
