@@ -19,7 +19,7 @@ class EmployeeFactory extends Factory
         return [
             'emp_fullname' => $this->faker->name(),
             'emp_email' => $this->faker->unique()->safeEmail,
-            'emp_address' => $this->faker->city(),
+            'emp_address' => $this->faker->address(),
             'emp_id' => $this->faker->randomNumber(9),
             'emp_department' => $this->faker->randomElement(['Front-End', 'Back-End', 'Mobile Developer', 'Design']),
             'gender' => $this->faker->randomElement(['Male', 'Female']),
