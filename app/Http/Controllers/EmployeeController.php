@@ -114,10 +114,12 @@ class EmployeeController extends Controller
         return redirect()->route('employee.index')
             ->with('success', 'Data Karyawan Berhasil Dihapus');
     }
-    public function cetakpdf(){
+    public function cetakpdf()
+    {
         $employees = employee::all();
-        $pdf = PDF::loadview('employee.cetakpdf',['employees'=> $employees]);
-        return $pdf->download('LAPORAN_EMPLOYEES.pdf');
 
+        $pdf = PDF::loadview('employee.cetakpdf', ['employees' => $employees])->setPaper('a4', 'landscape');
+
+        return $pdf->stream('LAPORAN_EMPLOYEES.pdf');
     }
 }
