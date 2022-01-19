@@ -51,7 +51,7 @@ class DepartmentController extends Controller
         department::create($validate_data);
 
         return redirect()->route('depart.index')
-        ->with('success', 'Data Department Berhasil Ditambah');
+            ->with('success', 'Data Department Berhasil Ditambah');
     }
 
     /**
@@ -87,16 +87,16 @@ class DepartmentController extends Controller
     {
         $validate_data = $request->validate([
             'dept_id' => ['required'],
-            'dept_name' => ['required'],
+            'dept_name' => ['required', 'string'],
             'number_of_emp' => ['required', 'integer'],
-            'dept_email' => ['required'],
-            'manager_name' => ['required'],
+            'dept_email' => ['required', 'email'],
+            'manager_name' => ['required', 'string'],
         ]);
 
         $depart->update($validate_data);
 
         return redirect()->route('depart.index')
-        ->with('success', 'Data Department Berhasil Diperbarui');
+            ->with('success', 'Data Department Berhasil Diperbarui');
     }
 
     /**
@@ -110,13 +110,13 @@ class DepartmentController extends Controller
         $depart->delete();
 
         return redirect()->route('depart.index')
-        ->with('success', 'Data Department Berhasil Dihapus');
+            ->with('success', 'Data Department Berhasil Dihapus');
     }
 
-    public function cetakdept(){
+    public function cetakdept()
+    {
         $depart = department::all();
-        $pdf = PDF::loadview('depart.cetakdept',['depart'=> $depart]);
+        $pdf = PDF::loadview('depart.cetakdept', ['depart' => $depart]);
         return $pdf->download('LAPORAN_DEPARTMENT.pdf');
-
     }
 }

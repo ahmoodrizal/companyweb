@@ -40,12 +40,12 @@ class EmployeeController extends Controller
     {
         $validate_data = $request->validate([
             'emp_id' => ['required'],
-            'emp_fullname' => ['required'],
-            'emp_email' => ['required'],
+            'emp_fullname' => ['required', 'string'],
+            'emp_email' => ['required', 'email'],
             'emp_address' => ['required'],
             'emp_department' => ['required'],
             'salary' => ['required', 'integer'],
-            'gender' => ['required'],
+            'gender' => ['required', 'string'],
         ]);
 
         Employee::create($validate_data);
@@ -87,12 +87,12 @@ class EmployeeController extends Controller
     {
         $validate_data = $request->validate([
             'emp_id' => ['required'],
-            'emp_fullname' => ['required'],
-            'emp_email' => ['required'],
+            'emp_fullname' => ['required', 'string'],
+            'emp_email' => ['required', 'email'],
             'emp_address' => ['required'],
             'emp_department' => ['required'],
             'salary' => ['required', 'integer'],
-            'gender' => ['required'],
+            'gender' => ['required', 'string'],
         ]);
 
         $employee->update($validate_data);
