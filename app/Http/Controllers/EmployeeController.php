@@ -129,7 +129,7 @@ class EmployeeController extends Controller
     {
         $employee = Employee::findOrFail($id);
 
-        $qrcode = QrCode::size(200)->email($employee->emp_email);
+        $qrcode = QrCode::size(250)->email($employee->emp_email);
 
         return view('employee.qrcode', compact('qrcode'));
     }
