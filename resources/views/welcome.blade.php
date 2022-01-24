@@ -193,7 +193,7 @@
                     <a href="#"
                         class="nav-text text-sm text-white font-medium mx-0 lg:mx-5 my-4 lg:my-0 relative active">Home</a>
                     <a href="#benefits" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Benefits</a>
-                    <a href="#pricing" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Pricing</a>
+                    
                     <a href="#contact" class="nav-text text-sm font-light mx-0 lg:mx-5 my-4 lg:my-0 relative">Contact</a>
 
                     <div class="flex items-center justify-end w-full lg:hidden mt-3">
@@ -300,11 +300,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">1</span>
-                            Trusted Mentor
+                            Maintain Server
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            We have provided highly experienced mentors<br class="sm:inline-block hidden" />
-                            for several years.
+                            Kami akan selalu memantau dan memelihara server<br class="sm:inline-block hidden" />
+                            Sampai kapanpun.
                         </p>
                     </li>
                     <li class="mb-8">
@@ -312,11 +312,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">2</span>
-                            Trusted Mentor
+                            Trusted
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            We have provided highly experienced mentors<br class="sm:inline-block hidden" />
-                            for several years.
+                            Kami sudah dipercaya sejak
+                            beberapa tahun kebelakang.
                         </p>
                     </li>
                     <li class="mb-8">
@@ -327,8 +327,8 @@
                             Access Forever
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            Are you busy at work so it's hard to consult? don't<br class="sm:inline-block hidden" />
-                            worry because you can access anytime.
+                           Apakah anda sibuk sehingga tidak ada waktu untuk konsultasi??<br class="sm:inline-block hidden" />
+                           Jangan khawatir, karena kami akan selalu hadir kapanpun dan dimanapun.
                         </p>
                     </li>
                     <li class="mb-16">
@@ -336,11 +336,11 @@
                             class="font-medium text-2xl mb-5 flex lg:flex-row flex-col items-center lg:justify-start justify-center text-medium-black">
                             <span
                                 class="circle h-12 w-12 text-xl flex items-center justify-center lg:mr-5 lg:mb-0 mb-5 text-white rounded-full">4</span>
-                            Halfpenny
+                           Up to Date
                         </h4>
                         <p class="text-base leading-7 tracking-wide caption">
-                            We provide economical packages for those of you<br class="sm:inline-block hidden" />
-                            who are still in school or workers.
+                            Kami akan selalu memastikan bahwa produk yang kami buat<br class="sm:inline-block hidden" />
+                            selalu up to date.
                         </p>
                     </li>
                 </ul>
@@ -395,9 +395,7 @@
                             <li>
                                 <a href="">Benefits</a>
                             </li>
-                            <li>
-                                <a href="">Pricing</a>
-                            </li>
+                            
                             <li>
                                 <a href="">Help</a>
                             </li>
