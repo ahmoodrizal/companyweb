@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\DepartmentController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,8 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('depart', DepartmentController::class);
     Route::get('/cetakdept', [DepartmentController::class, 'cetakdept'])->name('depart.cetakdept');
+
+    Route::resource('project', ProjectController::class);
 });
 
 

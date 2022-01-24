@@ -26,6 +26,11 @@
                         {{ __('Department Menu') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('project.index')" :active="request()->routeIs('project.index')">
+                        {{ __('Project Menu') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -88,6 +93,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('depart.index')" :active="request()->routeIs('depart.index')">
                 {{ __('Department Menu') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('project.index')" :active="request()->routeIs('project.index')">
+                {{ __('Project Menu') }}
             </x-responsive-nav-link>
         </div>
 

@@ -15,7 +15,7 @@
                             <div class="row mt-5 text-center">
                                 {{ $qrcode }}
                             </div>
-                            <div class="mt-4">
+                            <div class="mt-6">
                                 <a href="{{ route('employee.index') }}">
                                     <x-button>
                                         {{ 'Back To Index' }}
