@@ -41,7 +41,9 @@
                             @if (!@empty($projects))
                                 @foreach ($projects as $project)
                                     <tr>
-                                        <td class="px-4 py-2 border text-center">{{ $i++ }}</td>
+                                        <td class="px-4 py-2 border text-center">
+                                            {{ ($projects->currentPage() - 1) * $projects->links()->paginator->perPage() + $loop->iteration }}
+                                        </td>
                                         <td class=" px-4 py-2 w-4/12 border font-semibold">{{ $project->title }}
                                         </td>
                                         <td class=" px-4 py-2 border font-semibold">{{ $project->language }}</td>
@@ -84,6 +86,9 @@
                                 </tr>
                             @endif
                         </tbody>
+                        <div class="inline-blocks mb-4">
+                            {{ $projects->onEachSide(0)->links() }}
+                        </div>
                     </table>
                 </div>
             </div>
