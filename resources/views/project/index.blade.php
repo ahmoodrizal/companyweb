@@ -15,7 +15,7 @@
                         </a>
                         <div class="inline-block">
                             <div class="inline-block">
-                                <a href="#">
+                            <a href="{{ route('project.cetakproj') }}">
                                     <x-button class="ml-3 bg-indigo-500 hover:bg-indigo-400">
                                         <i class="fa fa-print mr-2"></i>
                                         {{ 'Print to PDF' }}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
+use PDF;
 
 class ProjectController extends Controller
 {
@@ -105,5 +106,12 @@ class ProjectController extends Controller
 
         return redirect()->route('project.index')
             ->with('success', 'Data Project Berhasil Dihapus');
+    }
+
+    public function cetakproj()
+    {
+        $project = Project::all();
+        $pdf = PDF::loadview('project.cetakproj', ['project' => $project]);
+        return $pdf->download('LAPORAN_PROJECT.pdf');
     }
 }

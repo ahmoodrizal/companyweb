@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/cetakdept', [DepartmentController::class, 'cetakdept'])->name('depart.cetakdept');
 
     Route::resource('project', ProjectController::class);
+    Route::get('/cetakproj', [ProjectController::class, 'cetakproj'])->name('project.cetakproj');
 });
 
 
