@@ -12,21 +12,22 @@
 Aplikasi Laravel Perancangan Sistem Company Profile
 Memiliki Fitur Berikut
 
-- [x] Autentikasi with Laravel Breeze
-- [x] SweetAlert 2.0
-- [x] CRUD Employee and Departments
-- [x] Font Awesome
-- [x] Blade Templating Engine
-- [x] Tailwind CSS 2.0
-- [x] Pagination
-- [x] Print Data to PDF
-- [x] Generate QR-Code
-- [x] Responsive Landing Page
+-   [x] Autentikasi with Laravel Breeze
+-   [x] SweetAlert 2.0
+-   [x] CRUD Employees, Departments, and Project
+-   [x] Font Awesome
+-   [x] Blade Templating Engine
+-   [x] Tailwind CSS 2.0
+-   [x] Pagination
+-   [x] Print Data to PDF
+-   [x] Generate QR-Code
+-   [x] Responsive Landing Page
 
 ## Author
--  Ahmad Rizal Imaduddin (2113191071)
--  Alam Nuzaman (2113191108)
--  Muhammad Ath-Thariq (2113191132)
+
+-   Ahmad Rizal Imaduddin (2113191071)
+-   Alam Nuzaman (2113191108)
+-   Muhammad Ath-Thariq (2113191132)
 
 ## License
 
